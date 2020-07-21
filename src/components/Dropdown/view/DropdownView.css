@@ -1,0 +1,180 @@
+.dropdownWrap {
+  display: inline-block;
+  margin: 10px auto auto auto;
+  width: 420px;
+}
+
+.dropdownWrap .inputBoxWrap {
+  display: inline-block;
+  min-height: 20px;
+  width: 100%;
+  padding: 4px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 1px solid #666;
+}
+
+.dropdownWrap .inputBox {
+  display: inline-block;
+  text-align: initial;
+  width: 370px;
+  height: 30px;
+  padding: 6px 10px;
+  color: #666;
+  vertical-align: middle;
+  /* border: 1px dotted #f00; */
+}
+
+.dropdownWrap .inputBox.placeholder {
+  color: #ccc;
+}
+
+.dropdownWrap .dropdownButtonWrap {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  /* background-color: #eaeaea; */
+}
+
+.dropdownWrap .dropdownButtonWrap #dropdownButton {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdownWrap .dropdownButtonWrap #dropdownButton:hover {
+  /* cursor: pointer; */
+}
+
+#dropdownButton .iconArrowWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: all 300ms ease;
+  -moz-transition: all 300ms ease;
+  -ms-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  -moz-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+#dropdownButton .iconArrowWrap.dropdownOpened {
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+#dropdownButton .iconArrowWrap .iconArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 2px;
+  background-color: #666;
+}
+
+#dropdownButton .iconArrowWrap .iconArrow#leftPart {
+  left: 6px;
+  -moz-transform: rotate(-150deg);
+  -webkit-transform: rotate(-150deg);
+  -o-transform: rotate(-150deg);
+  -ms-transform: rotate(-150deg);
+  transform: rotate(-150deg);
+}
+
+#dropdownButton .iconArrowWrap .iconArrow#rightPart {
+  left: 14px;
+  -moz-transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  transform: rotate(-30deg);
+}
+
+.countryListWrap {
+  padding: 10px 0;
+  text-align: initial;
+  max-height: 480px;
+  width: auto;
+  overflow: auto;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 8px 16px -8px #BDBDBD;
+  box-shadow: 0 8px 16px -8px #BDBDBD;
+  border: 1px solid #eaeaea;
+}
+
+.countryListWrap ul li {
+  padding: 4px 14px;
+}
+
+.countryListWrap ul li:hover {
+  background-color: #ececec;
+  cursor: default;
+}
+
+.searchBoxWrap {
+  width: 100%;
+}
+
+.searchBox {
+  display: block;
+  width: 370px;
+  padding: 6px 10px;
+  margin: 10px auto;
+  border: 1px solid #eaeaea;
+}
+
+.notFoundInfoWrap {
+  max-width: 390px;
+  min-height: 34px;
+  padding: 6px 0;
+  margin: 10px 12px;
+}
+
+.notFoundInfo {
+  display: inline-block;
+  width: 250px;
+  padding: 6px 10px;
+  color: #f00;
+  overflow-x: hidden;
+}
+
+.addSelectButton {
+  /* display: inline-block; */
+  padding: 8px 12px;
+  margin: auto;
+  color: #fff;
+  background-color: #3f75ea;
+  border: 1px solid #3f75ea;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  float: right;
+}
+
+.addSelectButton:hover {
+  cursor: pointer;
+}
+
+.addSelectButton:focus {
+  outline: none;
+}
+
+.showMoreButton {
+  text-align: right;
+  color: #999;
+}
+
+.fullWidth {
+  width: 100%;
+}
