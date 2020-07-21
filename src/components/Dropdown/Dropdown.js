@@ -5,7 +5,7 @@ import DropdownView from "./view/DropdownView";
 import countries from "../../data/countries.json";
 import "./Dropdown.css";
 
-const Dropdown = ({ userRole, howManyCountriesToShowSetting }) => {
+const Dropdown = ({ userRole, howManyCountriesToShowSetting, getResult }) => {
   const countryListApi = "https://api.first.org/data/v1/countries";
 
   const [countryDataSet, setCountryDataSet] = useState();
@@ -101,6 +101,16 @@ const Dropdown = ({ userRole, howManyCountriesToShowSetting }) => {
       setFilteredCountryList(countryList.filter(country => country.country.toLowerCase().indexOf(wordToSearch.toLowerCase()) > -1));
     return () => {}
   }, [countryList, wordToSearch])
+
+  useEffect(() => {
+    if (selectedCountry) {
+      const _country = countryList.filter(item => item.country === selectedCountry);
+      getResult(_country);
+    } else {
+      getResult(null);
+    }
+    return () => {}
+  }, [selectedCountry])
 
   return (
     <div>

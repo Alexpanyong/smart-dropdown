@@ -35,3 +35,24 @@ ul li {
 .numOfCountriesToShow input {
   width: 40px;
 }
+
+.resultPanelWrap {
+  
+}
+
+.resultPanel {
+  display: inline-block;
+  text-align: initial;
+  padding: 10px 16px;
+  margin: 20px;
+  color: #fff;
+  background-color: #000;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+.resultPanel .resultId,
+.resultPanel .resultCountry,
+.resultPanel .resultRegion {
+  margin: 4px 0;
+}
